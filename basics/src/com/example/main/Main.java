@@ -14,11 +14,14 @@ public class Main {
 
         int turtleCount = 0;
         System.out.println("I own " + turtleCount + " " + pluralize("turtle", turtleCount) + ".");
+        
         flipNHeads(2);
+
         clock();
     }
     // 1) Pluralize function ()
     public static String pluralize(String name, int count){
+
         return count == 1 ? name : name + "s";
 
     }
@@ -51,7 +54,6 @@ public class Main {
             int second = now.getSecond();
             String yld = hour + ":" + minute + ":" + second;
             System.out.println(yld);
-
             while (true) {
                 now = LocalDateTime.now();
                 if (now.getSecond() != second) {
