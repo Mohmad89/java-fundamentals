@@ -3,15 +3,13 @@
  */
 package basiclibrary;
 
-import java.util.Arrays;
-import java.util.Random;
+import java.util.*;
 
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
+
 
     public static void main(String[] args) {
+
         int[]b = roll(4);
         int [] dupl = {1,2,3,4,5};
         System.out.println(Arrays.toString(b));
@@ -23,7 +21,16 @@ public class App {
                 {55, 54, 60, 53, 59, 57, 61},
                 {65, 56, 55, 52, 55, 62, 57}
         };
+
         System.out.println(arrayAverage(weeklyMonthTemperatures));
+
+        // challenge 3
+        Challenge3 ch3 = new Challenge3();
+        //tally method
+        ch3.tallayMetodResulte();
+
+
+
     }
     // 1)roll function ()
     public static int[] roll(int number){
@@ -80,4 +87,6 @@ public class App {
         }
         return lowestAverage;
     }
+
+
 }

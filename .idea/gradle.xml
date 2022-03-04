@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
@@ -10,6 +11,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/basiclibrary" />
+            <option value="$PROJECT_DIR$/basiclibrary/app" />
           </set>
         </option>
       </GradleProjectSettings>
@@ -21,6 +23,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/basics" />
+            <option value="$PROJECT_DIR$/basics/app" />
           </set>
         </option>
       </GradleProjectSettings>
