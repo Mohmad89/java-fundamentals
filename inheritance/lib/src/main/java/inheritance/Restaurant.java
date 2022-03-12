@@ -1,9 +1,10 @@
-package Rest;
+package inheritance;
+
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Restaurant {
+public class Restaurant implements AddReview{
     private String name = "";
     private int numOfStars = 0;
     private int numOfStarsAfterReview =0 ;
@@ -39,7 +40,7 @@ public class Restaurant {
         this.numOfStars = stars;
 
     }
-
+    @Override
     public void addReview(Review review){
         reviewList.add(review);
         this.numOfStarsAfterReview = review.getNum_of_stars();
@@ -54,8 +55,8 @@ public class Restaurant {
                 "Name  => " + name + '\n' +
                 "Stars => " + numOfStars +'\n' +
                 "Price => " + price + '\n' +
-                           "---------------------------- " + this.name + " Restaurant With Review"+" --------------------------- " +'\n'+
-                 +'\n' +
+                "---------------------------- " + this.name + " Restaurant With Review"+" --------------------------- " +'\n'+
+                +'\n' +
                 "Name  => " + name + '\n' +
                 "Stars => " + numOfStarsAfterReview +'\n' +
                 "Price => " + price + '\n'

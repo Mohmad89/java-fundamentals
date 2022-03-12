@@ -3,8 +3,8 @@
  */
 package inheritance;
 
-import Rest.Restaurant;
-import Rest.Review;
+
+import java.util.ArrayList;
 
 public class Library {
 
@@ -19,9 +19,29 @@ public class Library {
 //        Kfc.addReview(review1);
 //        System.out.println(Kfc.toString());
 
-        Restaurant restaurant = new Restaurant("Mac", 5, "900");
-        Review review2 = new Review("good" , "Ali", 2);
-        restaurant.addReview(review2);
-        System.out.println(restaurant.toString());
+        // Restaurant instance
+//        Restaurant restaurant = new Restaurant("Mac", 5, "900");
+//        System.out.println(restaurant);
+//        Review review2 = new Review("good" , "Ali", 2);
+//        restaurant.addReview(review2);
+//        System.out.println(restaurant);
+
+        //Shop instance
+//        Shop shop = new Shop("Mall", "so beutiful", "$$$");
+//        System.out.println(shop.toString());
+//        Review shopReview = new Review("its not so good", "Mohammad", 9);
+//        shop.addReview(shopReview);
+//        System.out.println(shop);
+
+        //Theater instance
+        ArrayList <String> movieName = new ArrayList<>();
+        movieName.add("Spider Man");
+        movieName.add("Taken");
+        movieName.add("John wik");
+        Theater theater = new Theater(movieName);
+        Review theaterReview = new Review("so Goood", "Mahmoud", 7);
+        theater.addReview(theaterReview, "Taken");
+
+        System.out.println(theater.toString());
     }
 }
